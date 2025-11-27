@@ -1,16 +1,16 @@
 # 🧪 OpenChemFacts
 
-**Open-data platform for chemical ecotoxicity assessment**
-
 OpenChemFacts is an open-data platform dedicated to the assessment of chemicals’ ecotoxicity 🐟.
 It provides transparent, reproducible, and scientifically robust indicators derived from internationally recognized models and high-quality regulatory and scientific datasets.
+
+> ℹ️ The platform and its models are still under development. Several key improvements are planned in the coming months — for example, refining the data pipeline to distinguish organic from inorganic assessments, integrating additional databases, add new features, etc. A first version of the platform was released in November 2025 to start identifying contributors, early users, and potential funding partners.
 
 🔗 [https://openchemfacts.com/](https://openchemfacts.com/)
 
 
 ## 🌍 Purpose and Vision
 
-OpenChemFacts aims to make **ecotoxicity information on chemicals easier to access, compare, and reuse** for:
+OpenChemFacts aims to make ecotoxicity information on chemicals easier to access, compare, and reuse for:
 
 * environmental scientists and modelers
 * regulators and policy makers
