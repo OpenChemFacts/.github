@@ -1,6 +1,6 @@
 # Contributing to OpenChemFacts
 
-Thank you for your interest in contributing to OpenChemFacts! ğŸš€
+Thank you for your interest in contributing to OpenChemFacts! íº€
 
 This document describes the general rules and process for contributing to the organization.
 
@@ -8,7 +8,7 @@ This document describes the general rules and process for contributing to the or
 
 ---
 
-## ğŸ“‹ Overall Process
+## í³‹ Overall Process
 
 ### 1. Search for / Open an Issue
 
@@ -53,14 +53,14 @@ When opening a PR, make sure to:
 
 ---
 
-## ğŸ“œ Code of Conduct
+## í³œ Code of Conduct
 
 By contributing to OpenChemFacts, you agree to follow our Code of Conduct. 
 
 ---
 
-## ğŸ¤ Getting Help
+## í´ Getting Help
 
 If you have questions or need help => reach out to maintainers (currently: @albanfournier)
 
-Thank you for contributing! ğŸ™
+Thank you for contributing! í¹
