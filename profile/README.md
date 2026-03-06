@@ -83,23 +83,29 @@ OpenChemFacts data is openly available through multiple channels:
 
 ## 🤝 Openness and Collaboration
 
-OpenChemFacts is an open and collaborative initiative.
-We welcome contributions from researchers, regulators, method developers, and practitioners wishing to:
+OpenChemFacts is an open and collaborative initiative built around a growing community of scientists, developers, and domain experts.
 
-* suggest new data sources
-* refine harmonization rules
-* contribute or improve characterization models
-* review methods, documentation, and assumptions
+**Contributions are reviewed and community access is granted on a case-by-case basis.** To join, please get in touch first (see Contact below).
 
-If you’d like to contribute, feel free to open an issue or submit a pull request!
+Once accepted, contributors gain access to our dedicated platform:
+
+> **[feedback.openchemfacts.com](https://feedback.openchemfacts.com/en)** — submit ideas, report issues, vote on priorities, and track the project roadmap.
+
+We welcome input from:
+
+* Environmental scientists and ecotoxicologists
+* LCA practitioners and sustainability experts
+* Data engineers and developers
+* Regulators and policy makers
 
 ## Contact
 
 **alban@openchemfacts.com**
 
-Want to learn more about the project, discuss a collaboration, or explore how OpenChemFacts can support your work?
+Want to learn more, discuss a collaboration, or explore how OpenChemFacts can support your work?
 
 [Book a video call](https://cal.com/albanfournier/discussion)
+
 
 
 
