@@ -93,3 +93,13 @@ We welcome contributions from researchers, regulators, method developers, and pr
 
 If you’d like to contribute, feel free to open an issue or submit a pull request!
 
+## Contact
+
+**alban@openchemfacts.com**
+
+Want to learn more about the project, discuss a collaboration, or explore how OpenChemFacts can support your work?
+
+[Book a video call](https://cal.com/albanfournier/discussion)
+
+
+
