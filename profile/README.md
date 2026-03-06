@@ -68,6 +68,19 @@ Our objectives are to:
 
 ---
 
+## Data Access
+
+OpenChemFacts data is openly available through multiple channels:
+
+- **Platform**: [app.openchemfacts.com](https://app.openchemfacts.com) — browse and query ecotoxicity indicators
+- **API**: [api.openchemfacts.com](https://api.openchemfacts.com) — programmatic access (REST, JSON)
+- **Dataset**: published on [data.gouv.fr](https://www.data.gouv.fr/users/alban-fournier) under the [ODbL licence](http://opendatacommons.org/licenses/odbl/1.0/)
+
+> The source code and calculation models are proprietary and not publicly available.
+> Current database: **~12,800 chemicals** - version 0.2.0.
+
+---
+
 ## 🤝 Openness and Collaboration
 
 OpenChemFacts is an open and collaborative initiative.
@@ -79,3 +92,4 @@ We welcome contributions from researchers, regulators, method developers, and pr
 * review methods, documentation, and assumptions
 
 If you’d like to contribute, feel free to open an issue or submit a pull request!
+
