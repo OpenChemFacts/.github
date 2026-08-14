@@ -68,16 +68,28 @@ Our objectives are to:
 
 ---
 
+## 🏗️ How it's built
+
+Two repositories, split at the production boundary — what serves traffic, and what compiles the
+dataset it serves:
+
+| Repository | Role |
+|---|---|
+| **`openchemfacts-product`** | The public API (FastAPI) and the web application (React) — everything that serves `app.openchemfacts.com` and `api.openchemfacts.com`, shipped from one repository so a change spanning both is one release. |
+| **`openchemfacts-pipelines`** | The data factory — the scientific pipelines (ecotoxicity, chemical identity, biodegradability, partitioning, solubility, dilution volume) that compile the published dataset from regulatory and scientific sources. Produces the Parquet releases the product consumes; ships no traffic itself. |
+
+> The source code and calculation models are proprietary; both repositories are private.
+> Community contributors get access on a case-by-case basis — see **Openness and Collaboration** below.
+
+---
+
 ## Data Access
 
 OpenChemFacts data is openly available through multiple channels:
 
 - **Platform**: [app.openchemfacts.com](https://app.openchemfacts.com) — browse and query ecotoxicity indicators
-- **API**: [api.openchemfacts.com](https://api.openchemfacts.com) — programmatic access (REST, JSON)
+- **API**: [api.openchemfacts.com](https://api.openchemfacts.com) — programmatic access (REST, JSON); see `/health` for the current product version and dataset snapshot
 - **Dataset**: published on [data.gouv.fr](https://www.data.gouv.fr/users/alban-fournier) under the [ODbL licence](http://opendatacommons.org/licenses/odbl/1.0/)
-
-> The source code and calculation models are proprietary and not publicly available.
-> Current database: **~12,800 chemicals** - version 0.2.0.
 
 ---
 
@@ -105,7 +117,3 @@ We welcome input from:
 Want to learn more, discuss a collaboration, or explore how OpenChemFacts can support your work?
 
 [Book a video call](https://cal.com/albanfournier/discussion)
-
-
-
-
