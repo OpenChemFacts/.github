@@ -1,119 +1,52 @@
 # 🧪 OpenChemFacts
 
-OpenChemFacts is an open-data platform dedicated to the assessment of chemicals’ ecotoxicity 🐟.
-It provides transparent, reproducible, and scientifically robust indicators derived from internationally recognized models and high-quality regulatory and scientific datasets.
+**OpenChemFacts** is an open-data platform for transparent and reproducible chemical ecotoxicity assessment.
 
-> ℹ️ The platform and its models are still under development. Several key improvements are planned in the coming months — for example, refining the data pipeline to distinguish organic from inorganic assessments, integrating additional databases, add new features, etc. A first version of the platform was released in November 2025 to start identifying contributors, early users, and potential funding partners.
+🌐 [openchemfacts.com](https://openchemfacts.com/)
+📊 [app.openchemfacts.com](https://app.openchemfacts.com)
+🔌 [api.openchemfacts.com](https://api.openchemfacts.com)
 
-🔗 [https://openchemfacts.com/](https://openchemfacts.com/)
+The project combines curated regulatory and scientific data with internationally recognized environmental assessment models, including **USEtox®** and **Environmental Footprint (EF)**.
 
+## Repositories
 
-## 🌍 Purpose and Vision
+| Repository                    | Purpose                                                        |
+| ----------------------------- | -------------------------------------------------------------- |
+| **`openchemfacts-product`**   | Public API and web application                                 |
+| **`openchemfacts-pipelines`** | Scientific and data pipelines producing the published datasets |
 
-OpenChemFacts aims to make ecotoxicity information on chemicals easier to access, compare, and reuse for:
+The boundary is explicit:
 
-* environmental scientists and modelers
-* regulators and policy makers
-* LCA practitioners and sustainability experts
-* NGOs, industry stakeholders, and consultants working on chemical risk and impact assessment
+`scientific sources → pipelines → published dataset → API / web application`
 
-By combining curated open data with standardized characterization models, the platform helps users better understand the potential impacts of chemicals on ecosystems and supports evidence-based decision-making.
+The product repository consumes versioned datasets produced by the pipelines repository and does not reproduce scientific calculations.
 
+## Data
 
-## 🧱 Core Pillars
+Published OpenChemFacts datasets are openly available through:
 
-OpenChemFacts is built around two main pillars:
+- [OpenChemFacts platform](https://app.openchemfacts.com)
+- [OpenChemFacts API](https://api.openchemfacts.com)
+- [data.gouv.fr](https://www.data.gouv.fr/users/alban-fournier)
 
-### 1. **Data collection and harmonization**
+Data is distributed under the [ODbL licence](http://opendatacommons.org/licenses/odbl/1.0/).
 
-We aggregate, clean, and harmonize ecotoxicity-relevant data from major regulatory and scientific sources, such as:
+## Development status
 
-* US EPA ECOTOX database
-* EU REACH registration dossiers
-* OECD test guidelines and dossiers
-* National and regional inventories
+OpenChemFacts is under active development. Models, datasets and coverage are progressively extended and validated.
 
-Our work focuses on:
+The source code and scientific calculation pipelines are currently maintained in private repositories. External contributors can be granted access on a case-by-case basis.
 
-* consistent identifiers and cross-dataset mappings
-* harmonized units, endpoints, and species
-* traceable data provenance and versioning
+## Contribute
 
-This ensures that all indicators rely on a coherent and well-documented data foundation.
+Scientists, LCA practitioners, regulators and developers can:
 
-
-### 2. **Ecotoxicity characterization**
-
-OpenChemFacts computes ecotoxicity indicators using internationally recognized models, including:
-
-* USEtox®
-* Environmental Footprint 3.1 (EF 3.1)
-* Other consensus methods developed under **UNEP/SETAC Life Cycle Initiative** frameworks
-
-Our objectives are to:
-
-* ensure methodological alignment with widely accepted approaches
-* provide clearly documented assumptions and parameters
-* enable fully reproducible calculations
-* facilitate transparent comparison across chemicals
-
-
-## 🔍 Key Features
-
-* Centralized access to curated ecotoxicity data for a wide range of chemicals
-* Harmonized datasets ready for modeling and integration into analytical tools
-* Model-based indicators aligned with international guidelines
-* Transparent documentation of data sources, methods, and uncertainties
-* Open-data philosophy: results (and where possible underlying data) are openly available for reuse and verification
-
----
-
-## 🏗️ How it's built
-
-Two repositories, split at the production boundary — what serves traffic, and what compiles the
-dataset it serves:
-
-| Repository | Role |
-|---|---|
-| **`openchemfacts-product`** | The public API (FastAPI) and the web application (React) — everything that serves `app.openchemfacts.com` and `api.openchemfacts.com`, shipped from one repository so a change spanning both is one release. |
-| **`openchemfacts-pipelines`** | The data factory — the scientific pipelines (ecotoxicity, chemical identity, biodegradability, partitioning, solubility, dilution volume) that compile the published dataset from regulatory and scientific sources. Produces the Parquet releases the product consumes; ships no traffic itself. |
-
-> The source code and calculation models are proprietary; both repositories are private.
-> Community contributors get access on a case-by-case basis — see **Openness and Collaboration** below.
-
----
-
-## Data Access
-
-OpenChemFacts data is openly available through multiple channels:
-
-- **Platform**: [app.openchemfacts.com](https://app.openchemfacts.com) — browse and query ecotoxicity indicators
-- **API**: [api.openchemfacts.com](https://api.openchemfacts.com) — programmatic access (REST, JSON); see `/health` for the current product version and dataset snapshot
-- **Dataset**: published on [data.gouv.fr](https://www.data.gouv.fr/users/alban-fournier) under the [ODbL licence](http://opendatacommons.org/licenses/odbl/1.0/)
-
----
-
-## 🤝 Openness and Collaboration
-
-OpenChemFacts is an open and collaborative initiative built around a growing community of scientists, developers, and domain experts.
-
-**Contributions are reviewed and community access is granted on a case-by-case basis.** To join, please get in touch first (see Contact below).
-
-Once accepted, contributors gain access to our dedicated platform:
-
-> **[feedback.openchemfacts.com](https://feedback.openchemfacts.com/en)** — submit ideas, report issues, vote on priorities, and track the project roadmap.
-
-We welcome input from:
-
-* Environmental scientists and ecotoxicologists
-* LCA practitioners and sustainability experts
-* Data engineers and developers
-* Regulators and policy makers
+- report issues and suggest improvements;
+- contribute scientific expertise or datasets;
+- discuss collaborations and integrations.
 
 ## Contact
 
-**alban@openchemfacts.com**
+**[alban@openchemfacts.com](mailto\:alban@openchemfacts.com)**
 
-Want to learn more, discuss a collaboration, or explore how OpenChemFacts can support your work?
-
-[Book a video call](https://cal.com/albanfournier/discussion)
+[Book a discussion](https://calendar.app.google/KMSRAoYb6sZRKwbw6)
